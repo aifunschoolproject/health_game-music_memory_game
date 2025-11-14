@@ -1,0 +1,8 @@
+{
+  "title": "ResponsivePortrait",
+  "description": "自動依比例縮放的直立式 WebGL 模板（1170x2532）",
+  "unity": "6000.1.17f1",
+  "webgl": {
+    "memorySize": 256
+  }
+}
