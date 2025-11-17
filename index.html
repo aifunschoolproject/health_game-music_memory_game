@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="utf-8">
-    <title>小魚遊戲</title>
+    <title>音樂記憶遊戲</title>
     <style>
         html, body {
             margin: 0;
@@ -85,18 +85,17 @@
 			console.log(msg);
 		}
 
-		var buildUrl = "./Build";
-		var loaderUrl = buildUrl + "/Health_FishGame.loader.js";
+		var buildUrl = "Build";
+		var loaderUrl = buildUrl + "/Health_MusicMemoryGame.loader.js";
 
 		var config = {
-			dataUrl: buildUrl + "/Health_FishGame.data",
-			frameworkUrl: buildUrl + "/Health_FishGame.framework.js",
-			codeUrl: buildUrl + "/Health_FishGame.wasm",
-			streamingAssetsUrl: "StreamingAssets",
-			companyName: "DefaultCompany",
-			productName: "Health_FishGame",
-			productVersion: "1.0",
-			showBanner: unityShowBanner,
+		  dataUrl: buildUrl + "/Health_MusicMemoryGame.data",
+		  frameworkUrl: buildUrl + "/Health_MusicMemoryGame.framework.js",
+		  codeUrl: buildUrl + "/Health_MusicMemoryGame.wasm",
+		  streamingAssetsUrl: "StreamingAssets",
+		  companyName: "{{ COMPANY_NAME }}",
+		  productName: "{{ PRODUCT_NAME }}",
+		  productVersion: "{{ PRODUCT_VERSION }}"
 		};
 
 		document.querySelector("#unity-loading-bar").style.display = "block";
